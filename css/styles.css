@@ -1,0 +1,67 @@
+body{
+    background-color: antiquewhite;
+}
+
+.projects{
+    display: flex;
+    width: 95vw;
+    row-gap: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 45px;
+    padding:20px ;
+}
+
+.projects > .projectName{
+    flex: 0 0 15%;
+}
+
+
+.projectCard{
+    text-decoration: none;
+    height: 200px;
+    width: 300px;
+    font-size: 35px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    background-color: rgb(211, 255, 200);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+.projectName{
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px black;
+    z-index: 2;
+}
+
+.projectImage{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.4s ease-in ;
+    filter: blur(3px);
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.ProjectGallery{
+    font-size: 55px;
+}
+
+.projectCard:hover{
+    background-color: white;
+}
+
+.projectCard:hover .projectImage{
+    opacity: 1;
+}
