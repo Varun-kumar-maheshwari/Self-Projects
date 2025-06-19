@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(255, 247, 236);
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    width: 99vw;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 30px rgba(227,228,237,0.37);
+    z-index: 10;
+}
+
+.category{
+    display: flex;
+    align-self: center;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.category-link {
+  position: relative;
+  display: inline-block;
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 3;
+  margin-left: 45px;
+}
+
+.category-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(160, 159, 130);
+  transition: transform 0.3s ease;
+  transform-origin: center;
+  transform:scaleX(0);
+}
+
+.category-link:hover::after {
+  transform:scaleX(1)
+}
+
+
+.misc{
+    display: flex;
+    column-gap: 15px;
+    padding: 5px;
+    align-self: center;
+}
+
+.searchBox{
+    border-radius: 7px;
+    padding: 5px 15px;
+    border: none;
+    background-color: rgb(243, 243, 242);
+}
+
+.shoeImage{
+    width: 200px;
+    height: auto;
+}
+
+
+.miscImage{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+img{
+    cursor: pointer;
+}
+
+.logo{
+    /* position: absolute; */
+    height: 50px;
+    margin-left: 15px;
+}
+
+.bgImage{
+    object-fit: cover;
+    align-self: center;
+    justify-self: center;
+    height: 450px;
+    z-index: 2;
+}
+
+.bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 600px;
+}
+
+.bg-text{
+    position: absolute;
+    z-index: 1;
+    font-size: 550px;
+    color: antiquewhite;
+}
+
+hr{
+    background-color: rgb(227, 227, 227);
+    border: none;
+    height: 2px;
+    width: 100%;
+}
+
+.left{
+    z-index: 4;
+    left: 50px;
+}
+
+.bigText{
+    font-size: 75px;
+    position: absolute;
+    width: 150px;
+    left: 3.25em;
+    top: 100px;
+    color: rgb(171, 157, 138);
+}
+
+.smText{
+    position: absolute;
+    left: 150px;
+    top: 375px;
+    width: 300px;
+    color: rgb(198, 183, 163);
+}
+
+.names{
+    position: absolute;
+    font-size: 53px;
+    right: 75px;
+    z-index: 5;
+    top: 175px;
+    color: rgb(182, 161, 134);
+    font-weight: 500;
+}
+
+.ron{
+    position: absolute;
+    z-index: 5;
+    font-size: 70px;
+    color: rgb(182, 161, 134);
+    right: 170px;
+    top: 300px;
+}
+
+.shop-items{
+    display: flex;
+    column-gap: 50px;
+    margin-left: 150px;
+}
+
+.shoeImage{
+    border-radius: 15px;
+    
+}
+
+svg{
+    color: rgb(253, 234, 210) ;
+    position:absolute;
+    bottom: -80px;
+    right: 150px;
+}
+
+.name{
+    margin-top:-50px ;
+    color: brown;
+}
+
+.originalPrice{
+    color:rgb(183, 62, 62);
+}

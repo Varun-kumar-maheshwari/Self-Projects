@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+body{
+    overflow-x: hidden;
+    overscroll-behavior-y: none;
+}
+
 
 nav{
     display: flex;
